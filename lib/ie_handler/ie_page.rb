@@ -2,7 +2,7 @@
 require 'win32OLE'
 
 module IeHandler
-  class IEPage
+  class IePage
     IE_APP = "InternetExplorer.Application"
     
     attr_accessor :doc, :ie
