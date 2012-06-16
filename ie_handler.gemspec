@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.description = "IE Handler enable you to handle IE using Ruby.\nIt has simple syntax and strong methods.\nCurrently we support only IE, but we plan to extend other MS products in the\nfuture."
   s.email = ["u533u778@gmail.com"]
   s.extra_rdoc_files = ["History.txt", "Manifest.txt", "PostInstall.txt", "README.rdoc"]
-  s.files = ["History.txt", "Manifest.txt", "PostInstall.txt", "README.rdoc", "Rakefile", "lib/ie_handler.rb", "script/console", "script/destroy", "script/generate", "test/test_helper.rb", "test/test_ie_handler.rb", ".gemtest"]
+  s.files = ["History.txt", "Manifest.txt", "PostInstall.txt", "README.rdoc", "Rakefile", "lib/ie_handler.rb", "script/console", "script/destroy", "script/generate", "test/test_helper.rb", "test/test_ie_handler.rb"]
   s.homepage = "https://github.com/honkimi/IE_Handler"
   s.post_install_message = "PostInstall.txt"
   s.rdoc_options = ["--main", "README.rdoc"]
@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
   s.rubyforge_project = "ie_handler"
   s.rubygems_version = "1.8.10"
   s.summary = "IE Handler enable you to handle IE using Ruby"
-  s.test_files = ["test/test_ie_handler.rb", "test/test_helper.rb"]
+  #s.test_files = ["test/test_ie_handler.rb", "test/test_helper.rb"]
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
