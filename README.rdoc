@@ -27,12 +27,6 @@ The method initialize the current dom object.
   ie.find.id("container") #=> getElementById("container")
   ie.find.tag("table",2) #=> getElementsByTagName("table").itemn(2)
 
-We support "Saved Access" which hold the current dom object.
-  tr = ie.find.tag('table',12).tag('tr',1)
-  tr.sa.tag('td',1)
-  tr.sa.tag('td',2)
-  ...
-
 Other convinient methods.
   ie.wait
   ie.close
@@ -41,6 +35,12 @@ Other convinient methods.
   ie.tag('tr').each....
   ie.id('hoge').html
   ie.id('sbmt_btn').click
+
+We support "Saved Access" which hold the current dom object.
+  tr = ie.find.tag('table',12).tag('tr',1)
+  tr.sa.tag('td',1)
+  tr.sa.tag('td',2)
+  ...
 
 You can also add some elements.
   div = IEPage.make_elemn(ie, "div")
