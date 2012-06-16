@@ -12,59 +12,45 @@ future.
 == FEATURES/PROBLEMS:
 
 require this file and create ie object.
-<pre>
-require './lib/IEPage'
-ie = IEPage.new("http://google.com")
-</pre>
+ require './lib/IEPage'
+ ie = IEPage.new("http://google.com")
 
 You can access document like DOM.
 Make sure that you need to call "find" method at the first.
 The method initialize the current dom object.
-<pre>
-ie.find.name('Text',0) #=> getElementsByName("Text").item(0)
-ie.find.id("container") #=> getElementById("container")
-ie.find.tag("table",2) #=> getElementsByTagName("table").itemn(2)
-</pre>
+  ie.find.name('Text',0) #=> getElementsByName("Text").item(0)
+  ie.find.id("container") #=> getElementById("container")
+  ie.find.tag("table",2) #=> getElementsByTagName("table").itemn(2)
 
 We support "Saved Access" which hold the current dom object.
-<pre>
-tr = ie.find.tag('table',12).tag('tr',1)
-tr.sa.tag('td',1)
-tr.sa.tag('td',2)
-...
-</pre>
+  tr = ie.find.tag('table',12).tag('tr',1)
+  tr.sa.tag('td',1)
+  tr.sa.tag('td',2)
+  ...
 
 Other convinient methods.
-<pre>
-ie.wait
-ie.close
-ie.back
-ie.go(url)
-ie.tag('tr').each....
-ie.id('hoge').html
-ie.id('sbmt_btn').click
-</pre>
+  ie.wait
+  ie.close
+  ie.back
+  ie.go(url)
+  ie.tag('tr').each....
+  ie.id('hoge').html
+  ie.id('sbmt_btn').click
 
 You can also add some elements.
-<pre>
-div = IEPage.make_elemn(ie, "div")
-div.value = "test"
-div.attr("id", "item")
-ie.id('list').add(div)
-</pre>
+  div = IEPage.make_elemn(ie, "div")
+  div.value = "test"
+  div.attr("id", "item")
+  ie.id('list').add(div)
 
 For debugging.
 methods method output the all of the Win32OLE methods.
-<pre>
-ie.methods
-ie.methods(/^on/)
-ie.method("Click")
-</pre>
+  ie.methods
+  ie.methods(/^on/)
+  ie.method("Click")
 
 You can use origin Win32OLE method.
-<pre>
-ie.getElementById(...) 
-</pre>
+  ie.getElementById(...) 
 You can search the methods by using "methods, method" method.
 
 
