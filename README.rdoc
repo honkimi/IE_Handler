@@ -1,6 +1,7 @@
-= ie_handler
+== REQUIREMENTS:
 
-* https://github.com/honkimi/IE_Handler
+* Windows Machine
+* Over Ruby 1.8
 
 == DESCRIPTION:
 
@@ -11,7 +12,7 @@ future.
 
 == INSTALL:
 
-* sudo gem install ie_handler
+* gem install ie_handler
 
 
 == FEATURES
@@ -58,11 +59,6 @@ You can use origin Win32OLE method.
   ie.getElementById(...) 
 You can search the methods by using "methods, method" method.
 
-
-== REQUIREMENTS:
-
-* Windows Machine
-* Over Ruby 1.8
 
 
 == LICENSE:
