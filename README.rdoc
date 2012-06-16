@@ -9,7 +9,12 @@ It has simple syntax and strong methods.
 Currently we support only IE, but we plan to extend other MS products in the
 future.
 
-== FEATURES/PROBLEMS:
+== INSTALL:
+
+* sudo gem install ie_handler
+
+
+== FEATURES
 
 require this file and create ie object.
  require './lib/IEPage'
@@ -59,9 +64,6 @@ You can search the methods by using "methods, method" method.
 * Windows Machine
 * Over Ruby 1.8
 
-== INSTALL:
-
-* sudo gem install
 
 == LICENSE:
 
