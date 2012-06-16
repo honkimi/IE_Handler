@@ -1,7 +1,7 @@
 # -*- encoding: UTF-8 -*-
 require 'win32OLE'
 
-module IEHandler
+module IeHandler
   class IEPage
     IE_APP = "InternetExplorer.Application"
     
