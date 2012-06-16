@@ -17,8 +17,8 @@ future.
 == FEATURES
 
 require this file and create ie object.
- require './lib/IEPage'
- ie = IEPage.new("http://google.com")
+  require 'ie_handler'
+  ie = IeHandler::IePage.new("http://google.com")
 
 You can access document like DOM.
 Make sure that you need to call "find" method at the first.
