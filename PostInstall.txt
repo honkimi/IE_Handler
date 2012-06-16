@@ -1,0 +1,5 @@
+
+For more information on ie_handler, see 
+ *http://ie_handler.rubyforge.org
+
+Thank you for installing IE Handler!!
